@@ -86,6 +86,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="   Salvar endereço" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionSalvarEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWw-ZR-UIb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FE-TM-3gm">
                                 <rect key="frame" x="224" y="432" width="138" height="50"/>
@@ -141,38 +144,42 @@
                         <outlet property="myView" destination="6Qd-9F-3Wl" id="Utf-fR-lRB"/>
                         <outlet property="salvarEndBtn" destination="S2s-Nl-mkR" id="tmQ-Cg-Anp"/>
                         <outlet property="tfCep" destination="vn4-XM-Tho" id="pyS-S8-8te"/>
-                        <segue destination="zZI-Jc-QNs" kind="show" identifier="enderecoSalvos" id="bP9-Eh-10k"/>
+                        <segue destination="oQv-EA-Ivf" kind="show" identifier="enderecoSalvos" id="Bj7-9K-BK3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1849.2753623188407" y="67.633928571428569"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="O6i-c1-czn">
+        <!--Table View Controller-->
+        <scene sceneID="VIv-HQ-Pno">
             <objects>
-                <viewController id="zZI-Jc-QNs" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zEK-8e-AlP">
+                <tableViewController id="oQv-EA-Ivf" customClass="TableViewController" customModule="BuscaCEP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="HbA-jw-rss">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="loF-AN-2KU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGray6Color"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celula" id="Mzc-z2-udG">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="loF-AN-2KU" id="Kef-f7-zdn">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mzc-z2-udG" id="3RX-yE-9Z5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="wZW-7D-fXb"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="drA-lW-HO5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQ8-MX-ud7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oQv-EA-Ivf" id="Xrp-3A-HTw"/>
+                            <outlet property="delegate" destination="oQv-EA-Ivf" id="FmT-nh-dMF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Yqc-fS-ysB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YlO-zn-e1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594.202898550725" y="66.964285714285708"/>
+            <point key="canvasLocation" x="2571" y="68"/>
         </scene>
         <!--Item-->
         <scene sceneID="vOS-8j-oAJ">

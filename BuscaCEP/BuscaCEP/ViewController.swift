@@ -30,7 +30,6 @@ class ViewController: UIViewController {
        
         self.myView.layer.cornerRadius = 15
         self.myButton.layer.cornerRadius = 10
-   
         
     }
 
@@ -49,6 +48,24 @@ class ViewController: UIViewController {
         
         performSegue(withIdentifier: "enderecoSalvos", sender: self)
     }
+    
+    @IBAction func actionSalvarEnd(_ sender: UIButton) {
+        
+        if let logradouro = lbLogradouro.text {
+            
+    
+            let endereco = EnderecoUserDefaults()
+            endereco.salvar(endereco: logradouro)
+            self.lbLogradouro.text!
+            
+            let dados = endereco.listar()
+            
+            print( dados )
+            printContent(endereco)
+        }
+        
+    }
+    
     
     
 }
