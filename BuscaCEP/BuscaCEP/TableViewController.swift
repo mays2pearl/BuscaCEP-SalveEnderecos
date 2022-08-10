@@ -9,11 +9,12 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    var enderecos:[Any] = ["teste1", "teste2", "teste3"]
+    var enderecos:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        iniciar()
         
     }
 
@@ -22,23 +23,19 @@ class TableViewController: UITableViewController {
         //aqui chamar função atualizar lista de endereços
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func iniciar () {
         
-        if editingStyle == UITableViewCell.EditingStyle.delete {
+        var enderecosRecuperados: [String]?
+        
+        enderecosRecuperados = UserDefaults.standard.object(forKey: "endereco") as? [String]
+        
+        if let  it = enderecosRecuperados {
             
-            let endereco =  EnderecoUserDefaults()
-            endereco.remover(indice: indexPath.row)
-            atualizarListaEnderecos()
-            
+            self.enderecos = it
         }
         
     }
-    func atualizarListaEnderecos(){
-        let endereco = EnderecoUserDefaults()
-        self.enderecos = endereco.listar() as! [Any] 
-        tableView.reloadData()
-        
-    }
+  
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -54,8 +51,27 @@ class TableViewController: UITableViewController {
         
         let celula = tableView.dequeueReusableCell(withIdentifier: "celula", for: indexPath)
         
-        celula.textLabel?.text = enderecos[indexPath.row] as! String
+        celula.textLabel?.text = self.enderecos[indexPath.row]
         
         return celula
     }
-}
+    
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            self.enderecos.remove(at: indexPath.row)
+            
+            UserDefaults.standard.removeObject(forKey: "endereco")
+            
+            UserDefaults.standard.set(self.enderecos, forKey: "endereco")
+            UserDefaults.standard.synchronize()
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        }else if editingStyle == .insert {
+            
+        }
+        }
+    }
+

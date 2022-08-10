@@ -16,7 +16,6 @@
 		6543325128A1F54300588C64 /* Cep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543325028A1F54300588C64 /* Cep.swift */; };
 		6543325328A1F60500588C64 /* APIViaCep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543325228A1F60500588C64 /* APIViaCep.swift */; };
 		65E7528E28A33E3E00E21273 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7528D28A33E3E00E21273 /* TableViewController.swift */; };
-		65E7529028A3442400E21273 /* EnderecoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7528F28A3442400E21273 /* EnderecoUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		6543325028A1F54300588C64 /* Cep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cep.swift; sourceTree = "<group>"; };
 		6543325228A1F60500588C64 /* APIViaCep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViaCep.swift; sourceTree = "<group>"; };
 		65E7528D28A33E3E00E21273 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		65E7528F28A3442400E21273 /* EnderecoUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnderecoUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				6543323E28A1E99800588C64 /* SceneDelegate.swift */,
 				6543324028A1E99800588C64 /* ViewController.swift */,
 				65E7528D28A33E3E00E21273 /* TableViewController.swift */,
-				65E7528F28A3442400E21273 /* EnderecoUserDefaults.swift */,
 				6543325228A1F60500588C64 /* APIViaCep.swift */,
 				6543325028A1F54300588C64 /* Cep.swift */,
 				6543324228A1E99800588C64 /* Main.storyboard */,
@@ -150,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E7529028A3442400E21273 /* EnderecoUserDefaults.swift in Sources */,
 				6543325128A1F54300588C64 /* Cep.swift in Sources */,
 				65E7528E28A33E3E00E21273 /* TableViewController.swift in Sources */,
 				6543325328A1F60500588C64 /* APIViaCep.swift in Sources */,

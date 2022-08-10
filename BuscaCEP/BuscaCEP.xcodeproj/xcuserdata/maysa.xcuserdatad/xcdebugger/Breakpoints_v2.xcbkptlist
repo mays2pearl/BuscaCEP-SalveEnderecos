@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D93EE0D8-B932-4681-BC23-33456510CEFB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuscaCEP/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA - 58be44bed9a39d69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BuscaCEP.ViewController.myMapView.getter : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "BuscaCEP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maysa/Desktop/Maysa/BuscaCEP/BuscaCEP/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA - 6a860fe148a8559d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BuscaCEP.ViewController.myMapView.setter : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "BuscaCEP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maysa/Desktop/Maysa/BuscaCEP/BuscaCEP/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA - 9869fed496f0330c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BuscaCEP.ViewController.myMapView.modify : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "BuscaCEP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maysa/Desktop/Maysa/BuscaCEP/BuscaCEP/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA - cd397bd9097be4f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BuscaCEP.ViewController.myMapView.modify : Swift.Optional&lt;__C.MKMapView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BuscaCEP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maysa/Desktop/Maysa/BuscaCEP/BuscaCEP/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA - ef7919f00c176857"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BuscaCEP.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BuscaCEP.ViewController"
+                  moduleName = "BuscaCEP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maysa/Desktop/Maysa/BuscaCEP/BuscaCEP/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "593">
+               </Location>
+               <Location
+                  uuid = "71C9D3DF-03A2-4A53-BCAE-0FEAA5C013CA - a5b641cf8af885a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BuscaCEP.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BuscaCEP.ViewController&gt;"
+                  moduleName = "BuscaCEP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maysa/Desktop/Maysa/BuscaCEP/BuscaCEP/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "550">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

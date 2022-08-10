@@ -52,8 +52,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logradouro:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GfK-ah-YRS">
-                                        <rect key="frame" x="15" y="23" width="344" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GfK-ah-YRS">
+                                        <rect key="frame" x="115" y="23" width="244" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="Hyd-MP-vwI"/>
+                                            <constraint firstAttribute="width" constant="244" id="YDc-XJ-hnj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logradouro:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="idk-I8-oBf">
+                                        <rect key="frame" x="15" y="23" width="92.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -61,17 +71,18 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="XcU-AF-AtE" firstAttribute="leading" secondItem="6Qd-9F-3Wl" secondAttribute="leading" constant="15" id="6MK-OK-eFB"/>
                                     <constraint firstAttribute="trailing" secondItem="Qts-TG-Wih" secondAttribute="trailing" constant="15" id="85m-fX-prN"/>
-                                    <constraint firstItem="GfK-ah-YRS" firstAttribute="leading" secondItem="6Qd-9F-3Wl" secondAttribute="leading" constant="15" id="Twc-98-P8X"/>
+                                    <constraint firstAttribute="trailing" secondItem="GfK-ah-YRS" secondAttribute="trailing" constant="15" id="8Uy-KF-m9C"/>
+                                    <constraint firstItem="idk-I8-oBf" firstAttribute="leading" secondItem="6Qd-9F-3Wl" secondAttribute="leading" constant="15" id="IoT-py-okK"/>
                                     <constraint firstAttribute="height" constant="178" id="YUV-RH-WPb"/>
-                                    <constraint firstAttribute="trailing" secondItem="XcU-AF-AtE" secondAttribute="trailing" constant="15" id="YdA-JW-ka5"/>
-                                    <constraint firstItem="XcU-AF-AtE" firstAttribute="top" secondItem="GfK-ah-YRS" secondAttribute="bottom" constant="35" id="bH8-LF-DnH"/>
+                                    <constraint firstAttribute="trailing" secondItem="XcU-AF-AtE" secondAttribute="trailing" constant="15" id="bsM-Sb-WiH"/>
                                     <constraint firstAttribute="width" constant="374" id="c8y-yv-gZc"/>
-                                    <constraint firstAttribute="trailing" secondItem="GfK-ah-YRS" secondAttribute="trailing" constant="15" id="pWY-ss-fQp"/>
-                                    <constraint firstItem="GfK-ah-YRS" firstAttribute="top" secondItem="6Qd-9F-3Wl" secondAttribute="top" constant="23" id="rBi-vk-EMg"/>
+                                    <constraint firstItem="idk-I8-oBf" firstAttribute="top" secondItem="6Qd-9F-3Wl" secondAttribute="top" constant="23" id="cyA-Q7-JhW"/>
+                                    <constraint firstItem="Qts-TG-Wih" firstAttribute="top" secondItem="XcU-AF-AtE" secondAttribute="bottom" constant="31.5" id="fbF-f3-IQy"/>
                                     <constraint firstItem="Qts-TG-Wih" firstAttribute="leading" secondItem="6Qd-9F-3Wl" secondAttribute="leading" constant="15" id="uhL-Pf-RSY"/>
+                                    <constraint firstItem="XcU-AF-AtE" firstAttribute="leading" secondItem="6Qd-9F-3Wl" secondAttribute="leading" constant="15" id="wX8-fu-EqG"/>
                                     <constraint firstAttribute="bottom" secondItem="Qts-TG-Wih" secondAttribute="bottom" constant="27" id="zfo-or-l0U"/>
+                                    <constraint firstItem="GfK-ah-YRS" firstAttribute="top" secondItem="6Qd-9F-3Wl" secondAttribute="top" constant="23" id="zp8-Rf-wql"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2s-Nl-mkR">
@@ -141,6 +152,7 @@
                         <outlet property="lbLocalidade" destination="XcU-AF-AtE" id="l1B-oI-CAe"/>
                         <outlet property="lbLogradouro" destination="GfK-ah-YRS" id="2Ae-nH-3fN"/>
                         <outlet property="myButton" destination="d8H-NI-eqI" id="1b7-EQ-2jh"/>
+                        <outlet property="myMapView" destination="y7S-41-6vd" id="ZAb-I2-E8t"/>
                         <outlet property="myView" destination="6Qd-9F-3Wl" id="Utf-fR-lRB"/>
                         <outlet property="salvarEndBtn" destination="S2s-Nl-mkR" id="tmQ-Cg-Anp"/>
                         <outlet property="tfCep" destination="vn4-XM-Tho" id="pyS-S8-8te"/>
